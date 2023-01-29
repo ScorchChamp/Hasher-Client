@@ -1,0 +1,8 @@
+.output {
+    word-wrap: break-word;
+}
+
+.notes {
+    margin-top: 10rem;
+    font-style: italic;
+}

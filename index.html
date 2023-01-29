@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    <meta charset="utf-8">
+    </meta>
+    <link id="css" rel="preload"
+        href="https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7MOzlojwUKQ.woff"
+        as="font" type="font/woff2" crossorigin>
+    </link>
+    <link id="css" rel="stylesheet" type="text/css" href="https://scorchchamp.github.io/style.css" media="all">
+    </link>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779624385801311"
+        crossorigin="anonymous" async></script>
+    <script src="https://scorchchamp.github.io/auto-format.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <p>Input text: <input type="text" id="inputText"></p>
+    <p>
+        Select hash function:
+        <select id="hashFunction">
+            <option value="SHA-1">SHA-1</option>
+            <option value="SHA-256">SHA-256</option>
+            <option value="SHA-512">SHA-512</option>
+        </select>
+    </p>
+    <p id="output" class="output"></p>
+
+    <div class="notes">
+    <h3>About Hashing</h3>
+    <p>Hashing is a process of taking an input (often called a message), and producing a fixed-sized output (often
+        called a hash or digest) that is a representation of the input data. The hash is generated using a mathematical
+        function that transforms the input into a unique string of characters, making it extremely difficult to reverse
+        the process and determine the original message from the hash.</p>
+    <p>The hash functions are designed in such a way that even a small change in the input will result in a completely
+        different hash, this property is known as the "avalanche effect". This makes it very difficult for attackers to
+        manipulate the input data without being detected, as the resulting hash would be completely different from the
+        expected value.</p>
+    <p>For example, in the case of password authentication, instead of storing the user's password in plain text, the
+        password is hashed and the hash value is stored in the database. When the user attempts to log in, the system
+        hashes the entered password and compares the hash with the value stored in the database. If the hashes match,
+        the user is granted access. This approach ensures that the passwords are stored securely and are not accessible
+        even if the database is compromised.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
